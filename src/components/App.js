@@ -18,9 +18,9 @@ function App(){
         <div className="ag-theme-alpine" style={ { height: 600, width: 600 } }>
             <AgGridReact defaultColDef= {{floatingFilter:true}}
                 rowData={rowData}>
-                <AgGridColumn field="city" ></AgGridColumn>
-                <AgGridColumn field="date" ></AgGridColumn>
-                <AgGridColumn field="value" ></AgGridColumn>
+                <AgGridColumn field="city" filter="agTextColumnFilter" ></AgGridColumn>
+                <AgGridColumn field="date" filter="agTextColumnFilter"></AgGridColumn>
+                <AgGridColumn field="value" filter="agNumberColumnFilter" ></AgGridColumn>
             </AgGridReact>
         </div>
     );
